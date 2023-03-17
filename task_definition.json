@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:108286109057:task-definition/baller-task:3",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:108286109057:task-definition/baller-task:5",
     "containerDefinitions": [
         {
             "name": "baller-container",
-            "image": "108286109057.dkr.ecr.us-west-1.amazonaws.com/baller-repo:1bb3c4bff74f088d881580cb2b6a5026e2c68f08",
+            "image": "108286109057.dkr.ecr.us-west-1.amazonaws.com/baller-repo:0552e0a8442a06c62fa37c3b5ecfc7f721aea29d",
             "cpu": 0,
             "portMappings": [
                 {
@@ -33,7 +33,7 @@
     "taskRoleArn": "arn:aws:iam::108286109057:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::108286109057:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 3,
+    "revision": 5,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -79,7 +79,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-03-17T07:17:19.408Z",
+    "registeredAt": "2023-03-17T07:25:19.179Z",
     "registeredBy": "arn:aws:iam::108286109057:user/terraform2",
     "tags": []
 }
