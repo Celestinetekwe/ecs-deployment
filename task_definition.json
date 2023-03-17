@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:108286109057:task-definition/Sample-app:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:108286109057:task-definition/Sample-app:7",
     "containerDefinitions": [
         {
             "name": "sample-app",
-            "image": "public.ecr.aws/w3a1v3f9/sample-app",
+            "image": "108286109057.dkr.ecr.us-east-1.amazonaws.com/sample-app:e37e670599dabeb5aa5888c08e19d79e790af480",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,7 +16,6 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
             "logConfiguration": {
@@ -33,7 +32,7 @@
     "family": "Sample-app",
     "executionRoleArn": "arn:aws:iam::108286109057:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 7,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -44,7 +43,13 @@
             "name": "ecs.capability.execution-role-awslogs"
         },
         {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
@@ -70,7 +75,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-03-10T03:12:45.870Z",
-    "registeredBy": "arn:aws:iam::108286109057:user/kubeadmin",
+    "registeredAt": "2023-03-17T02:58:18.726Z",
+    "registeredBy": "arn:aws:iam::108286109057:user/terraform2",
     "tags": []
 }
